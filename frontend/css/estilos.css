@@ -1,0 +1,21 @@
+/* Estilos mínimos que Tailwind no cubre con clases. */
+body {
+  font-family: "Figtree", system-ui, sans-serif;
+}
+
+::selection {
+  background: #fecaca;
+  color: #1c1917;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+/* Números alineados en tablas y estadísticas */
+.num {
+  font-variant-numeric: tabular-nums;
+}

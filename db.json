@@ -1,0 +1,12 @@
+{
+  "favoritos": [
+    {
+      "id": "1",
+      "pokemonId": 25,
+      "nombre": "pikachu",
+      "imagen": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+      "apodo": "Chispita"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

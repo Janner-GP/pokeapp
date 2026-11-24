@@ -1,0 +1,14 @@
+{
+  "name": "pokedex-mpa",
+  "version": "1.0.0",
+  "description": "Ejercicio para juniors: Pokédex MPA con HTML, JS vanilla, Tailwind, Animate.css, SweetAlert2 y JSON Server",
+  "private": true,
+  "scripts": {
+    "api": "json-server db.json --port 3000",
+    "web": "serve frontend --listen 5500"
+  },
+  "devDependencies": {
+    "json-server": "1.0.0-beta.15",
+    "serve": "^14.2.8"
+  }
+}

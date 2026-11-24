@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle · Pokédex</title>
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="min-h-screen bg-stone-100 text-stone-900">
+  <header class="border-b border-stone-200 bg-white">
+    <nav class="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4">
+      <a href="index.html" class="mr-auto text-lg font-bold tracking-tight">Poké<span class="text-red-600">dex</span></a>
+      <a href="index.html" class="text-stone-600 hover:text-stone-900">Listado</a>
+      <a href="buscar.html" class="text-stone-600 hover:text-stone-900">Buscar</a>
+      <a href="favoritos.html" class="text-stone-600 hover:text-stone-900">Favoritos</a>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-4 py-8">
+    <a href="index.html" class="text-sm text-stone-600 hover:text-stone-900">← Volver al listado</a>
+
+    <!-- Se llena con JS según ?id= de la URL -->
+    <article id="detalle" class="mt-4">
+      <p class="text-stone-600">Cargando…</p>
+    </article>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/detalle.js"></script>
+</body>
+</html>
