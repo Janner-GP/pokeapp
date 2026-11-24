@@ -6,6 +6,8 @@ Ejercicio para juniors: una Pokédex hecha con **HTML + JavaScript vanilla**, si
 - **JSON Server** como backend propio para el CRUD de favoritos.
 - **Tailwind CSS**, **Animate.css** y **SweetAlert2** por CDN (sin compilar nada).
 
+¿Quieres construirla tú desde cero? Sigue la [guía paso a paso](GUIA.md).
+
 ## Cómo correrlo
 
 Requisitos: Node.js 18 o superior. Todo se ejecuta dentro de la carpeta `PokeApp`.
