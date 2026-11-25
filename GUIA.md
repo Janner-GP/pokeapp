@@ -8,7 +8,7 @@ El código completo de cada archivo está en esta misma carpeta por si te atasca
 
 ## Paso 0. Herramientas
 
-1. Instala **Node.js** (versión LTS) desde <https://nodejs.org>. Comprueba en la terminal:
+1. Instala **Node.js** (versión LTS) desde [https://nodejs.org](https://nodejs.org). Comprueba en la terminal:
 
    ```bash
    node -v
@@ -17,9 +17,8 @@ El código completo de cada archivo está en esta misma carpeta por si te atasca
    ```bash
    npm -v
    ```
-
 2. Instala **VS Code** y, opcionalmente, la extensión **Live Server**.
-3. Ten a mano la documentación de la PokeAPI: <https://pokeapi.co/docs/v2>. Abre en el navegador <https://pokeapi.co/api/v2/pokemon/pikachu> para ver qué devuelve.
+3. Ten a mano la documentación de la PokeAPI: [https://pokeapi.co/docs/v2](https://pokeapi.co/docs/v2). Abre en el navegador [https://pokeapi.co/api/v2/pokemon/pikachu](https://pokeapi.co/api/v2/pokemon/pikachu) para ver qué devuelve.
 
 ## Paso 1. Crear el proyecto
 
@@ -63,7 +62,6 @@ Crea un `.gitignore` con una línea: `node_modules/`.
      ]
    }
    ```
-
 2. En `package.json`, cambia `"scripts"` por:
 
    ```json
@@ -72,14 +70,12 @@ Crea un `.gitignore` con una línea: `node_modules/`.
      "web": "serve frontend --listen 5500"
    }
    ```
-
 3. Arranca la API:
 
    ```bash
    npm run api
    ```
-
-4. **Prueba:** abre <http://localhost:3000/favoritos> en el navegador. Debes ver a Pikachu. Prueba también `http://localhost:3000/favoritos?pokemonId=25`.
+4. **Prueba:** abre [http://localhost:3000/favoritos](http://localhost:3000/favoritos) en el navegador. Debes ver a Pikachu. Prueba también `http://localhost:3000/favoritos?pokemonId=25`.
 
 > Con esto ya tienes las 4 operaciones: `GET`, `POST`, `PATCH` y `DELETE` sobre `/favoritos`. JSON Server guarda los cambios en `db.json`.
 
@@ -155,15 +151,15 @@ async function obtenerPokemon(nombreOId) {
 
 Lista de funciones que necesitas:
 
-| Función | Petición |
-|---------|----------|
-| `obtenerPokemones(offset, limit)` | `GET POKEAPI/pokemon?offset=&limit=` |
-| `obtenerPokemon(nombreOId)` | `GET POKEAPI/pokemon/:id` |
-| `obtenerFavoritos()` | `GET API/favoritos` |
-| `buscarFavorito(pokemonId)` | `GET API/favoritos?pokemonId=` (devuelve el primero o `null`) |
-| `crearFavorito(favorito)` | `POST API/favoritos` |
-| `actualizarFavorito(id, datos)` | `PATCH API/favoritos/:id` |
-| `eliminarFavorito(id)` | `DELETE API/favoritos/:id` |
+| Función                            | Petición                                                         |
+| ----------------------------------- | ----------------------------------------------------------------- |
+| `obtenerPokemones(offset, limit)` | `GET POKEAPI/pokemon?offset=&limit=`                            |
+| `obtenerPokemon(nombreOId)`       | `GET POKEAPI/pokemon/:id`                                       |
+| `obtenerFavoritos()`              | `GET API/favoritos`                                             |
+| `buscarFavorito(pokemonId)`       | `GET API/favoritos?pokemonId=` (devuelve el primero o `null`) |
+| `crearFavorito(favorito)`         | `POST API/favoritos`                                            |
+| `actualizarFavorito(id, datos)`   | `PATCH API/favoritos/:id`                                       |
+| `eliminarFavorito(id)`            | `DELETE API/favoritos/:id`                                      |
 
 Para `POST` y `PATCH` hay que mandar el cuerpo como JSON:
 
@@ -187,7 +183,7 @@ Y unas ayudas: `idDesdeUrl(url)`, `imagenPokemon(id)`, `formatearNumero(id)`, `t
 4. Pon los `href` de "Anterior" y "Siguiente" (`index.html?pagina=N`). Oculta el que no aplique.
 5. Añade `animate__animated animate__fadeIn` a la lista para que aparezca suave.
 
-**Prueba:** <http://localhost:5500/index.html?pagina=2>.
+**Prueba:** [http://localhost:5500/index.html?pagina=2](http://localhost:5500/index.html?pagina=2).
 
 ## Paso 7. Vista 2: detalle (`detalle.js`) — aquí está el CREATE
 
@@ -198,7 +194,7 @@ Y unas ayudas: `idDesdeUrl(url)`, `imagenPokemon(id)`, `formatearNumero(id)`, `t
    - Si **no** es favorito: pide un apodo con `Swal.fire({ input: 'text', showCancelButton: true })` y llama a `crearFavorito(...)`.
    - Si **ya** es favorito: `eliminarFavorito(favorito.id)`.
 
-**Prueba:** agrega uno desde <http://localhost:5500/detalle.html?id=6> y mira cómo cambia `db.json`.
+**Prueba:** agrega uno desde [http://localhost:5500/detalle.html?id=6](http://localhost:5500/detalle.html?id=6) y mira cómo cambia `db.json`.
 
 ## Paso 8. Vista 3: búsqueda (`buscar.js`)
 

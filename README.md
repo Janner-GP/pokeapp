@@ -10,10 +10,17 @@ Ejercicio para juniors: una Pokédex hecha con **HTML + JavaScript vanilla**, si
 
 ## Cómo correrlo
 
-Requisitos: Node.js 18 o superior. Todo se ejecuta dentro de la carpeta `PokeApp`.
+Requisitos: Node.js 18 o superior.
 
 ```bash
-cd PokeApp
+git clone https://github.com/Janner-GP/pokeapp.git
+```
+
+```bash
+cd pokeapp
+```
+
+```bash
 npm install
 ```
 
